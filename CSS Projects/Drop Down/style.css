@@ -1,0 +1,74 @@
+/* SAMPLE FOR LEARNING   */
+
+/* input {
+    display: none;
+  }
+  
+  label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid;
+    border-radius: 4px;
+    background: #336600;
+    color: #FFF;
+    font-family: arial;
+    transition: background-color 0.1s, color 0.1s;
+  }
+  
+  label:hover {
+    background: #33CC00;
+    color: #000;
+  }
+  
+  .test {
+    transition: height .3s ease;
+    height: 0;
+    overflow: hidden;
+    width: 200px;
+    background: red;
+    margin-top: 10px;
+  }
+  
+  input:checked + .test {
+    height: 100px;
+  } */
+
+/* PRACTICE */
+
+label{
+    cursor: pointer;
+    background-color: brown;
+    padding: 1%;
+    border: 2px solid gray;
+    border-radius: 6px;
+    color: white;
+    display: inline-block;
+    transition: background-color 0.1s, color 0.1s;
+}
+label:hover{
+    background-color: thistle;
+    color: black;
+}
+
+input{
+    display: none;
+}
+
+.test{
+    overflow: hidden;
+    transition: height 1s ease;
+    background-color: cadetblue;
+    width: 22%;
+    height: 0;
+    margin-top: 10px;
+}
+
+input:checked + .test{
+    height: 8rem;
+    overflow: scroll;
+}
+
+
+
+

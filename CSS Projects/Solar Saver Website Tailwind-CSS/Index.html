@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        /* Custom styles for the toggle icon */
+        summary::marker {
+            display: none;
+        }
+
+        /* html {
+            scroll-behavior: smooth;
+        } */
+
+        summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: #f97316;
+            /* Orange color */
+            transition: transform 0.3s;
+            margin-left: 0.5rem;
+        }
+
+        details[open] summary::after {
+            content: '-';
+        }
+    </style>
+
+</head>
+
+<body class="bg-gray-950 px-6">
+
+    <!-- NavBar -->
+
+    <div class="flex justify-between items-center ">
+
+        <img src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c03_Galbra%20Logo.svg"
+            class="w-14 ml-5">
+
+        <ul class="gap-14 flex text-xs text-white ">
+            <a class="hover:text-orange-500 duration-[0.5s]" href="#pricing">Pricing</a>
+            <a class="hover:text-orange-500 duration-[0.5s]" href="#about">About</a>
+            <a class="hover:text-orange-500 duration-[0.5s]" href="#tools">Tools</a>
+            <a class="hover:text-orange-500 duration-[0.5s]" href="#work">How It Works</a>
+            <a class="hover:text-orange-500 duration-[0.5s]" href="#testimonials">Testimonials</a>
+            <a class="hover:text-orange-500 duration-[0.5s]" href="#faq">FAQ</a>
+        </ul>
+
+        <button
+            class="text-white text-[14px] bg-orange-500 rounded-lg px-6 py-2 mr-5 hover:cursor-pointer hover:bg-white hover:text-orange-500 duration-[0.75s]">Calculate
+            Solar</button>
+
+    </div>
+
+    <!-- First Page -->
+
+    <div data-aos="fade-up" data-aos-duration="1500">
+        <div class="text-center text-white p-24 absolute">
+
+            <h1 class="text-7xl font-bold font-sans"><span class="text-orange-500">Does Your Home</span> Need Quality
+                Solar Panel Installation?</h1>
+
+            <p class="py-9">Our solar power experts will help you find the perfect solution for your home.</p>
+
+            <button
+                class="text-white text-[14px] bg-orange-500 rounded-lg px-6 py-2 hover:cursor-pointer hover:bg-white hover:text-orange-500 duration-[0.75s]">Calculate
+                Solar</button>
+
+        </div>
+
+    </div>
+
+    <img class="mt-80"
+        src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c06_Galbra%20Hero%20Image.webp"
+        alt="">
+
+
+
+    <!-- Pricing Boxes-->
+
+    <div data-aos="fade-up" data-aos-duration="1000">
+        <h1 class="text-white text-4xl text-center font-bold mt-11 duration-100" id="pricing">Transparent Pricing</h1>
+    </div>
+
+    <div class="flex flex-row  justify-around mt-24">
+
+
+        <div data-aos="fade-right" data-aos-duration="1000">
+            <div class="bg-black w-96 p-10 rounded-3xl">
+
+                <img class="bg-orange-500 p-4 rounded-full"
+                    src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c0b_Calculate%20Solar.svg"
+                    alt=""> <br>
+
+                <h1 class="text-white text-4xl">Service Name</h1> <br>
+                <p class="text-white text-lg w-">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis maxime
+                    minus lorem epsum minus.
+                </p> <br>
+                <p class="text-white text-sm">$1.61 / watt</p><br>
+
+                <button
+                    class="text-white bg-orange-500 py-2 px-6 rounded-xl hover:cursor-pointer  hover:bg-white hover:text-orange-500 duration-[0.75s]">
+                    Calculate Solar
+                </button>
+
+            </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <div class="bg-black w-96 p-10 rounded-3xl">
+
+                <img class="bg-orange-500 p-4 rounded-full"
+                    src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c0b_Calculate%20Solar.svg"
+                    alt=""> <br>
+
+                <h1 class="text-white text-4xl">Service Name</h1> <br>
+                <p class="text-white text-lg w-">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis maxime
+                    minus lorem epsum minus.
+                </p> <br>
+                <p class="text-white text-sm">$1.61 / watt</p><br>
+
+                <button
+                    class="text-white bg-orange-500 py-2 px-6 rounded-xl hover:cursor-pointer  hover:bg-white hover:text-orange-500 duration-[0.75s]">
+                    Calculate Solar
+                </button>
+
+            </div>
+        </div>
+
+        <div data-aos="fade-left" data-aos-duration="1000">
+            <div class="bg-black w-96 p-10 rounded-3xl">
+
+                <img class="bg-orange-500 p-4 rounded-full"
+                    src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c0b_Calculate%20Solar.svg"
+                    alt=""> <br>
+
+                <h1 class="text-white text-4xl">Service Name</h1> <br>
+                <p class="text-white text-lg w-">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis maxime
+                    minus lorem epsum minus.
+                </p> <br>
+                <p class="text-white text-sm">$1.61 / watt</p><br>
+
+                <button
+                    class="text-white bg-orange-500 py-2 px-6 rounded-xl hover:cursor-pointer  hover:bg-white hover:text-orange-500 duration-[0.75s]">
+                    Calculate Solar
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- Pricing Boxes -->
+
+    <!-- About Us -->
+
+    <div class="flex flex-row justify-evenly pt-44">
+
+        <div class="w-1/2 mt-32 pr-20">
+            <p class="text-orange-500 text-lg" id="about">About Us</p> <br>
+            <h1 class="text-white text-6xl font-bold">Solar Saver</h1> <br>
+            <p class="text-white text-lg">Solar Saver Is Revolutionizing The Solar Industry By Offering The Most
+                Cost-Effective Solar Solutions In
+                America. We Specialize In Providing Transparent, Instant Pricing For Solar Installations. With An
+                Innovative Al Quoting Engine, They Ensure Personalized And Accurate Estimates For Each Customer.
+            </p> <br>
+
+            <p class="text-orange-500 text-lg">Solar Saver Also Offers Innovative Battery Solutions And Flexible
+                Financing Options, Making Solar Energy
+                More Accessible And Affordable.
+            </p> <br>
+
+        </div>
+
+        <!-- Setting solar images by placing black triangle on backside of solar  -->
+
+        <div class="relative">
+
+            <div class="w-5/11 relative z-10">
+                <img src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c0c_SOLAR%20PANEl.webp"
+                    class="w-full">
+            </div>
+
+            <div class="absolute -right-20 top-24 inset-1 z-0 opacity-70">
+                <img src="./_-removebg-preview.png" class="w-full">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- AI Utilization -->
+
+    <div class="relative">
+
+        <div class="w-5/12 pr-20 absolute -right-12 top-96">
+            <h1 class="text-white font-bold text-5xl">AI UTILIZATION</h1>
+            <br>
+            <p class="text-white text-base">Solar Saver Utilizes An Al Quoting Engine To Estimate The Ideal Solar
+                System
+                Size For A Customer's Specific
+                Needs. This System Calculates The Number Of Solar Panels Required, The Potential CO2 Offset, And The
+                New,
+                Likely Reduced Monthly Power Bill.
+                <br><br>
+                By Analyzing Various Factors Such As Roof Size, Local Sun Exposure, And Current Electricity Usage,
+                The
+                Al
+                Provides A Tailored Solution.
+                <br><br>
+                <span class="text-orange-500">This Approach Ensures Customers Get A System That Maximizes Energy
+                    Efficiency
+                    And Cost Savings While Contributing To Environmental Sustainability.</span>
+            </p>
+
+        </div>
+    </div>
+
+    <div data-aos="fade-right">
+        <div
+            class="h-28 bg-gradient-to-l from-yellow-600 to-transparent flex flex-col justify-center w-3/5 text-right pr-10 mt-48">
+            <h1 class="text-white font-bold text-2xl">SYSTEM SIZE</h1>
+            <p class="text-white">9.5 - 14.13 kWh*</p>
+        </div>
+    </div>
+
+    <div data-aos="fade-right">
+        <div
+            class="h-28 bg-gradient-to-l from-yellow-600 to-transparent flex flex-col justify-center w-2/5 text-right pr-10 mt-28">
+            <h1 class="text-white font-bold text-2xl">SOLAR SIZE</h1>
+            <p class="text-white">34 - 43*</p>
+        </div>
+    </div>
+
+    <div data-aos="fade-right">
+        <div
+            class="h-28 bg-gradient-to-l from-yellow-600 to-transparent flex flex-col justify-center w-1/4 text-right pr-10 mt-28">
+            <h1 class="text-white font-bold text-2xl">CO2 OFFSET</h1>
+            <p class="text-white">7.65 - 9.07*</p>
+        </div>
+    </div>
+
+    <!-- GALLERY -->
+
+    <div data-aos="fade-up">
+        <h1 class="text-orange-500 font-bold text-6xl text-center pt-60">GALLERY</h1>
+    </div>
+
+    <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+        <div class="flex flex-row gap-10 justify-center mt-24">
+            <img src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c16_Galbra%2520Gallery%2520Image%25201-p-500.png"
+                class="w-80 h-52 mt-12" alt="">
+            <img src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c12_Galbra%2520Gallery%2520Image%25202-p-500.png"
+                class="w-[35%] h-72" alt="">
+            <img src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c1a_Galbra%2520Gallery%2520Image%25203-p-500.png"
+                class="w-80 h-52 mt-12" alt="">
+        </div>
+    </div>
+
+    <!-- Arrow Navigator -->
+
+    <div class="flex justify-center gap-x-20 mt-16 hover:cursor-pointer">
+        <img src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c11_arrow-left.svg"
+            alt="">
+        <img src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c10_arrow-right.svg"
+            alt="">
+    </div>
+
+    <!-- SOLAR SAVER TOOLS -->
+
+    <div data-aos="fade-up">
+        <div class="text-white flex flex-col justify-center text-center mt-24" id="tools">
+            <h1 class="text-6xl font-bold"> <span class="text-orange-500"> SOLAR </span> SAVER TOOLS</h1>
+            <br> <br>
+            <p class="">There are many variations of passages of Lorem Ipsum available <br> but the majority have
+                suffered
+                alteration in some form.</p>
+        </div>
+    </div>
+
+    <!-- Boxes -->
+
+    <div class="container mx-auto">
+
+        <div data-aos="zoom-out">
+            <div class="grid md:grid-cols-3 grid-cols-1 mt-14 gap-4">
+
+                <div class="bg-black h-48 p-8 rounded-2xl flex flex-col items-start">
+                    <img src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c1e_Mask%20group.svg"
+                        class="bg-orange-500 p-4 rounded-full">
+
+                    <p class="text-white mt-4">Real-time, accurate <br> production estimates.</p>
+                </div>
+
+
+                <div class="bg-black h-48 p-8 rounded-2xl">
+                    <img src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c1f_Mask%20group%20(1).svg"
+                        class="bg-orange-500 p-4 rounded-full">
+
+                    <p class="text-white mt-4">Minimal training time for <br> new sales representatives.</p>
+                </div>
+
+
+                <div class="bg-black h-48 p-8 rounded-2xl">
+                    <img src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c20_Mask%20group%20(2).svg"
+                        class="bg-orange-500 p-4 rounded-full">
+
+                    <p class="text-white mt-4">Homeowner-focused <br> proposal design for clarity.</p>
+                </div>
+
+                <div class="bg-black h-48 p-8 rounded-2xl">
+                    <img src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c20_Mask%20group%20(2).svg"
+                        class="bg-orange-500 p-4 rounded-full">
+
+                    <p class="text-white mt-4">Homeowner-focused <br> proposal design for clarity.</p>
+                </div>
+
+                <div class="bg-black h-48 p-8 rounded-2xl">
+                    <img src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c20_Mask%20group%20(2).svg"
+                        class="bg-orange-500 p-4 rounded-full">
+
+                    <p class="text-white mt-4">Homeowner-focused <br> proposal design for clarity.</p>
+                </div>
+
+                <div class="bg-black h-48 p-8 rounded-2xl">
+                    <img src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c20_Mask%20group%20(2).svg"
+                        class="bg-orange-500 p-4 rounded-full">
+
+                    <p class="text-white mt-4">Homeowner-focused <br> proposal design for clarity.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BEFORE & AFTER -->
+
+    <div data-aos="fade-up  data-aos-duration= 2500">
+        <div class="text-white flex flex-col justify-center text-center mt-24">
+            <h1 class="text-6xl font-bold"> <span class="text-orange-500"> BEFORE </span> & AFTER</h1>
+            <br>
+            <p class="">There are many variations of passages of Lorem Ipsum available <br> but the majority have
+                suffered
+                alteration in some form.</p>
+        </div>
+    </div>
+
+    <div class="flex justify-center mt-16">
+        <img src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c12_Galbra%2520Gallery%2520Image%25202-p-500.png"
+            class="w-[65%]" alt="">
+    </div>
+
+    <!-- BEST EQUIPMENTS -->
+
+    <div data-aos="fade-up" data-aos-duration="2500">
+        <div class="text-white flex flex-col justify-center text-center mt-24">
+            <h1 class="text-6xl font-bold"> <span class="text-orange-500"> BEST </span> EQUIPMENTS IN THE INDUSTRY</h1>
+            <br>
+            <p class="">Lorem ipsum dolor sit amet consectetur. Posuere risus enim at <br> massa netus. Adipiscing
+                faucibus
+                lectus proin id. Consectetur.</p>
+        </div>
+    </div>
+
+    <div class="container mx-auto">
+        <div class="grid md:grid-cols-3 grid-cols-1 mt-10 gap-6">
+            <div class="text-white bg-black flex flex-col items-center min-h-80 rounded-2xl">
+                <img src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c2c_Mask%20group%20(6).svg"
+                    class="w-[30%] mt-8" alt=""> <br>
+                <h1 class="font-bold text-xl ">PANELS</h1>
+                <p class="w-[75%] text-center mt-4">Lorem ipsum dolor sit amet consectetur. Nulla habitant accumsan
+                    commodo porttitor. Enim malesuada.
+                </p>
+            </div>
+
+            <div class="text-white bg-black flex flex-col items-center min-h-80 rounded-2xl">
+                <img src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c2c_Mask%20group%20(6).svg"
+                    class="w-[30%] mt-8" alt="">
+                <h1 class="font-bold text-xl mt-6">PANELS</h1>
+                <p class="w-[75%] text-center mt-4">Lorem ipsum dolor sit amet consectetur. Nulla habitant accumsan
+                    commodo porttitor. Enim malesuada.
+                </p>
+            </div>
+
+            <div class="text-white bg-black flex flex-col min-h-80 items-center rounded-2xl">
+                <img src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c2c_Mask%20group%20(6).svg"
+                    class="w-[30%] mt-8" alt="">
+                <h1 class="font-bold text-xl mt-6">PANELS</h1>
+                <p class="w-[75%] text-center mt-4">Lorem ipsum dolor sit amet consectetur. Nulla habitant accumsan
+                    commodo porttitor. Enim malesuada.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAPS -->
+
+    <div data-aos="fade-up" data-aos-duration="2500">
+
+        <div class="flex flex-col items-center">
+            <div class="text-white flex flex-col justify-center text-center mt-24">
+                <h1 class="text-6xl font-bold"> <span class="text-orange-500"> WE'VE </span> GOT YOU COVERED</h1>
+                <br> <br>
+                <p class="">Lorem ipsum dolor sit amet consectetur. Posuere risus enim at.</p>
+            </div>
+
+            <div
+                class="mt-14 text-orange-500 border-orange-500 border-solid border-2 flex flex-row gap-8 w-60 p-2 justify-center rounded-xl">
+                <a href="#Abc" class="active:bg-orange-500 active:text-white active:rounded-lg active:px-2">Full
+                    Install</a>
+                <a class="active:bg-orange-500 active:text-white active:rounded-lg active:px-2">DIY</a>
+                <a class="active:bg-orange-500 active:text-white active:rounded-lg active:px-2">Map</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex justify-center mt-14 max-w-full">
+        <img class="w-[80vw] " id="Abc"
+            src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c2d_Full%20Install.webp"
+            alt="">
+    </div>
+
+    <!-- Steps -->
+
+
+    <div class="flex justify-start gap-x-20 mt-16 hover:cursor-pointer" id="work">
+        <img src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c11_arrow-left.svg"
+            alt="">
+        <img src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c10_arrow-right.svg"
+            alt="">
+
+        <div class="">
+            <img src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c46_Group%2031.png"
+                alt="">
+        </div>
+    </div>
+
+    <div class="text-white flex flex-col w-[40%] pl-24 mt-16 border-solid border-l-2 border-white">
+        <h1 class="font-bold text-4xl">
+            STEP <span class="text-orange-500 text-8xl">01</span>
+        </h1> <br>
+        <p>
+            Lorem ipsum dolor sit amet consectetur. Adipiscing scelerisque faucibus duis nibh. Orci interdum turpis
+            pretium quam neque viverra euismod. <br><br>
+            Sed habitant odio molestie ac. Purus purus diam fermentum venenatis consectetur sem eget neque eu.
+        </p>
+
+    </div>
+
+    <div class="relative left-[600px] bottom-56">
+        <img class="h-56 w-[45vw]"
+            src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c43_Rectangle%2019%20(1).png"
+            alt="">
+    </div>
+
+    <!-- Joh Doe -->
+
+    <div class="mb-6" id="testimonials">
+        <img class="p-10"
+            src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c35_Rectangle%2019.webp"
+            alt="">
+    </div>
+
+    <div class="flex flex-col gap-2 w-[39vw] relative left-[650px] bottom-[550px]">
+
+        <h1 class=" text-white text-3xl font-bold "> <span class="text-orange-500 text-6xl mt-4">"</span> <br> Lorem
+            ipsum
+            dolor sit amet consectetur. Adipiscing scelerisque
+            faucibus duis nibh. Orci interdum turpis pretium quam neque viverraF</h1>
+
+        <div class="flex items-center mt-4">
+            <img src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c38_Ellipse%207.svg"
+                alt=""> &nbsp; &nbsp;
+            <p class="text-white">@Joh Doe</p>
+        </div>
+    </div>
+
+    <!-- QUESTIONS / FAQ-->
+
+    <div class="mt-[-200px]" id="faq">
+
+        <!-- This FAQ is made by Html tags -->
+
+        <div class="w-full flex justify-center text-white">
+            <details class="border border-orange-500 rounded-lg p-4 w-[90%] bg-black">
+                <summary class="text-3xl font-semibold flex justify-between items-center cursor-pointer">
+                    WHAT IS SOLAR ENERGY?
+                </summary>
+                <p class="mt-8 text-sm w-[50%]">
+                    Solar energy is the radiant light and heat from the Sun that is harnessed using a range of
+                    ever-evolving
+                    technologies such as solar heating, photovoltaics, solar thermal energy, solar architecture, and
+                    artificial photosynthesis.
+                </p>
+            </details>
+        </div>
+
+        <!-- This FAQ is made by using JavaScript -->
+
+        <div>
+            <div class="text-white flex flex-row justify-between px-20 mt-8" id="dropdown">
+                <h1 class="text-3xl hover:cursor-pointer font-bold">WHAT ARE THE BENEFITS OF USING SOLAR PANELS?</h1>
+                <img class="w-[1vw] h-[1vw] mt-3 hover:cursor-pointer hover:rotate-45 "
+                    src="./images-removebg-preview.png" alt="">
+
+            </div>
+            <div class="text-white flex flex-row justify-between px-20 mt-8" style="display: none;" id="opendiv">
+                <h1 class="text-3xl hover:cursor-pointer font-bold">WHAT ARE THE BENEFITS OF USING SOLAR PANELS?</h1>
+                <img class="w-[1vw] h-[1vw] mt-3 hover:cursor-pointer hover:rotate-45 "
+                    src="./images-removebg-preview.png" alt="">
+
+            </div>
+
+            <p class="mt-8 text-sm w-[50%] text-white pl-20  " style="display: none;" id="visible">Solar energy is the
+                radiant light and
+                heat
+                from the Sun that is harnessed using a range of ever-evolving
+                technologies such as solar heating, photovoltaics, solar thermal energy, solar architecture, and
+                artificial
+                photosynthesis.</p>
+
+        </div>
+
+    </div>
+    <!-- READY TO INSTALL -->
+
+    <div class="w-[100vw] m-0 relative mt-32">
+        <img class="w-[100%] h-[35rem]"
+            src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c1a_Galbra%2520Gallery%2520Image%25203-p-500.png"
+            alt="">
+        <div class="absolute flex flex-col justify-center items-center w-full top-36">
+            <h1 class="font-bold text-7xl">READY TO START</h1>
+            <p class="text-white mt-10">Our solar power experts will help you find the perfect solution for your home.
+            </p>
+            <button
+                class="text-white text-[14px] bg-orange-500 rounded-lg px-6 py-2 mt-8 hover:cursor-pointer hover:bg-white hover:text-orange-500 duration-[0.75s]">Calculate
+                Solar</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="flex justify-between items-center mt-10">
+
+        <img src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c03_Galbra%20Logo.svg"
+            class="w-14 ml-10">
+
+        <ul class="gap-14 flex  text-xs text-white">
+            <a class="hover:text-orange-500 duration-[0.5s]" href="#pricing">Pricing</a>
+            <a class="hover:text-orange-500 duration-[0.5s]" href="#about">About</a>
+            <a class="hover:text-orange-500 duration-[0.5s]" href="#tools">Tools</a>
+            <a class="hover:text-orange-500 duration-[0.5s]" href="#work">How It Works</a>
+            <a class="hover:text-orange-500 duration-[0.5s]" href="#testimonials">Testimonials</a>
+            <a class="hover:text-orange-500 duration-[0.5s]" href="#faq">FAQ</a>
+        </ul>
+    </div>
+
+    <div class="border-[1px] border-gray-500 mt-8 w-[90vw] flex flex-row justify-center items-center"></div>
+    <!-- Copy Right Section -->
+
+
+    <div class="flex justify-between mt-10 pb-14">
+
+        <p class="text-gray-300 text-xs">&copy; 2024 Solar Saver | Muhammad Ibtesam. All rights reserved.</p>
+        <div class="flex flex-row gap-8 ">
+            <img class="hover:cursor-pointer"
+                src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c40_Instagram.svg"
+                alt="">
+            <img class="hover:cursor-pointer"
+                src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c41_Twitter.svg"
+                alt="">
+            <img class="hover:cursor-pointer"
+                src="https://assets-global.website-files.com/63443b2122ba28565c306b60/65d95f169aa219adfebe1c42_Facebook.svg"
+                alt="">
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        var dropdown = document.getElementById("dropdown")
+        var opendiv = document.getElementById("opendiv")
+        dropdown.addEventListener("click", () => {
+            document.getElementById("visible").style.display = "flex"
+            dropdown.style.display = "none"
+            opendiv.style.display = "flex"
+        })
+        opendiv.addEventListener("click", () => {
+            document.getElementById("visible").style.display = "none"
+            dropdown.style.display = "flex"
+            opendiv.style.display = "none"
+        })
+    </script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

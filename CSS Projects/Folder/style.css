@@ -1,0 +1,1237 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: black;
+    height: 85px;
+    padding: 0px 25px;
+    position: relative;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    color: #fff;
+    font-weight: bold;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 35px;
+}
+
+.explore {
+    position: fixed;
+    z-index: 50;
+    top: 75px;
+    background-color: black;
+    width: 320px;
+    padding-left: 20px;
+}
+
+.explore li {
+    margin-block: 15px;
+}
+
+.explore li:hover {
+    cursor: pointer;
+}
+
+summary,
+.flex:hover {
+    cursor: pointer;
+}
+
+/* .explore li a{
+    color: #fff;
+} */
+a {
+    color: #fff;
+}
+
+.gap {
+    display: flex;
+    gap: 30px;
+}
+
+.nasa_live {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nasa_live span {
+    padding: 1px 12px;
+    font-size: 14px;
+    border: 1px solid rgba(255 0 0 / .6);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    margin-top: 8px;
+    margin-left: 4px;
+}
+
+details::selection {
+    border: 3px solid #ff0000;
+}
+
+.nasa_live:hover span {
+    background-color: #ff0000;
+}
+
+figure img {
+    width: 65px;
+}
+
+:is(.nasa_live, summary) {
+    font-size: 19px;
+}
+
+form input {
+    background-color: transparent;
+    color: #fff;
+    padding: 6px;
+    font-size: 15px;
+    border: 2px solid #999;
+}
+
+/* NAVAR Ends */
+
+/* Slider intro starts  */
+
+.intro {
+    width: 100vw;
+    height: 120vh;
+    position: relative;
+
+}
+
+.intro .cover {
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%);
+}
+
+.intro .text {
+    width: 45%;
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    color: white;
+}
+
+.intro .text h1 {
+    font-size: 4.25rem;
+    line-height: 4.75rem;
+}
+
+.intro .text p {
+    font-size: large;
+    margin-top: 15px;
+}
+
+.intro .text button {
+    font-size: 1.6rem;
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 6px 25px;
+    margin-top: 15px;
+}
+
+.intro .text button:hover {
+    background-color: maroon;
+    cursor: pointer;
+}
+
+:is(.text, .second) {
+    padding: 10px;
+}
+
+.second {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    background-color: transparent;
+    bottom: 20px;
+    left: 10px;
+    position: absolute;
+    color: #fff;
+    width: 85%;
+}
+.second .left p {
+    letter-spacing: 4px;
+    font-size: small;
+}
+
+.second div button {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: larger;
+    background-color: transparent;
+    color: #fff;
+}
+
+.second div button:hover {
+    cursor: pointer;
+}
+
+.second .left i {
+    transform: rotate(40deg);
+    color: tomato;
+    /* background-color: #fff;
+    background-size: contain;
+    width: 18px;
+    height: 18px; */
+    border-radius: 100px;
+    font-size: 25px;
+    margin-left: 5px;
+    position: absolute;
+}
+
+.second .left i:hover {
+    cursor: pointer;
+    color: firebrick;
+}
+
+.second img {
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 100px;
+    border: 4px solid lightseagreen;
+}
+
+.second .right i {
+    font-size: 55px;
+    color: gray;
+    background-color: white;
+    border-radius: 100px;
+}
+
+.second .right img,
+i:hover {
+    cursor: pointer;
+}
+
+.intro .second .left {
+    /* width: 25%; */
+    padding-left: 30px;
+    gap: 80px;
+}
+
+.intro .second .left button {
+    font-size: large;
+}
+
+.intro .second .right {
+    display: flex;
+    width: 10%;
+    gap: 20px;
+    margin-left: 45px;
+}
+
+/* Slider Intro End */
+
+/* Featured News Starts */
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    padding: 3rem;
+}
+
+.main .feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .feature h1 {
+    font-size: 3.1rem;
+}
+
+.main .feature h3 {
+    font-size: 1.5rem;
+}
+
+.main .feature i {
+    transform: rotate(40deg);
+    color: tomato;
+    /* background-color: #fff;
+    background-size: contain;
+    width: 18px;
+    height: 18px; */
+    border-radius: 100px;
+    font-size: 25px;
+    margin-left: 5px;
+    position: absolute;
+}
+
+.main .feature i:hover {
+    cursor: pointer;
+    color: firebrick;
+}
+
+.main .box{
+    width: 100vw;
+    margin-top: 50px;
+}
+.main .box:hover{
+    cursor: pointer;
+}
+
+/* Image 1 */
+.main .box .image {
+    position: relative;
+}
+
+.main .box .image img {
+    width: 45%;
+    filter: brightness(65%);
+}
+
+.main .box .sub {
+    width: 97%;
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    /* left: 25px; */
+    padding: 20px;
+}
+
+.main .box .sub .article {
+    font-size: x-small;
+    letter-spacing: 3.5px;
+    bottom: 240px;
+    position: relative;
+}
+
+.main .box .sub .min {
+    font-size: smaller;
+    letter-spacing: 3.5px;
+}
+
+.main .box .sub h1 {
+    font-size: x-large;
+    line-height: 25px;
+    margin-top: 7px;
+    width: 50%;
+}
+
+/* Image 2 */
+.main .box .image2 {
+    position: relative;
+    left: 36.9rem;
+    bottom: 24.26rem;
+}
+
+.main .box .image2 img {
+    width: 22%;
+    height: 24rem;
+    filter: brightness(65%);
+}
+
+.main .box .sub2 {
+    width: 45%;
+    position: absolute;
+    bottom: 30px;
+    color: #fff;
+    left: 25px;
+}
+
+.main .box .sub2 .article2 {
+    font-size: x-small;
+    letter-spacing: 3.5px;
+    bottom: 225px;
+    position: relative;
+}
+
+.main .box .sub2 .min2 {
+    font-size: smaller;
+    letter-spacing: 3.5px;
+    margin-bottom: 5px;
+}
+
+.main .box .image2 .sub2 h1 {
+    font-size: x-large;
+    width: 45%;
+    line-height: 25px;
+}
+
+/* Image 3 */
+.main .box .image3 {
+    position: relative;
+    left: 55.3rem;
+    bottom: 48.5rem;
+    box-sizing: border-box;
+}
+
+.main .box .image3 img {
+    width: 22%;
+    height: 11.5rem;
+    filter: brightness(65%);
+    background-size: cover;
+}
+
+.main .box .sub3 {
+    width: 36%;
+    position: absolute;
+    bottom: 26px;
+    color: #fff;
+    left: 23px;
+}
+
+.main .box .sub3 .article3 {
+    font-size: x-small;
+    letter-spacing: 3.5px;
+    bottom: 26px;
+    position: relative;
+}
+
+.main .box .sub3 .min3 {
+    font-size: smaller;
+    letter-spacing: 3.5px;
+    margin-bottom: 5px;
+}
+
+.main .box .image3 .sub3 h1 {
+    font-size: large;
+    width: 45%;
+    line-height: 25px;
+}
+
+/* Image 4 */
+.main .box .image4 {
+    position: relative;
+    left: 55.3rem;
+    bottom: 47.7rem;
+    box-sizing: border-box;
+}
+
+.main .box .image4 img {
+    width: 22%;
+    height: 11.5rem;
+    filter: brightness(65%);
+    background-size: cover;
+}
+
+.main .box .sub4 {
+    width: 36%;
+    position: absolute;
+    bottom: 24px;
+    color: #fff;
+    left: 23px;
+}
+
+.main .box .sub4 .article4 {
+    font-size: x-small;
+    letter-spacing: 3.5px;
+    bottom: 22px;
+    position: relative;
+}
+
+.main .box .sub4 .min4 {
+    font-size: smaller;
+    letter-spacing: 3.5px;
+    margin-bottom: 5px;
+}
+
+.main .box .image4 .sub4 h1 {
+    font-size: large;
+    width: 45%;
+    line-height: 21px;
+}
+
+/* Below Section */
+.main #box {
+    display: flex;
+    justify-content: space-around;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    bottom: 47rem;
+}
+.main #box:hover{
+    cursor: pointer;
+}
+
+/* One */
+.main #box .box1 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 60%;
+}
+
+.main #box .box1 img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.main #box .sb1 {
+    width: 70%;
+}
+
+.main #box .sb1 #min1 {
+    font-size: x-small;
+    letter-spacing: 5px;
+    margin-bottom: 6px;
+}
+
+.main #box .sb1 h1 {
+    font-size: small;
+    width: 80%;
+}
+
+.main #box .sb1 #article1 {
+    font-size: small;
+    letter-spacing: 5px;
+    margin-top: 5px;
+}
+
+/* Two */
+.main #box .box2 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 60%;
+}
+
+.main #box .box2 img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.main #box .sb2 {
+    width: 70%;
+}
+
+.main #box .sb2 #min2 {
+    font-size: x-small;
+    letter-spacing: 5px;
+    margin-bottom: 6px;
+}
+
+.main #box .sb2 h1 {
+    font-size: small;
+    width: 80%;
+}
+
+.main #box .sb2 #article2 {
+    font-size: small;
+    letter-spacing: 5px;
+    margin-top: 5px;
+}
+
+/* Three */
+.main #box .box3 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 60%;
+}
+
+.main #box .box3 img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.main #box .sb3 {
+    width: 70%;
+}
+
+.main #box .sb3 #min3 {
+    font-size: x-small;
+    letter-spacing: 5px;
+    margin-bottom: 6px;
+}
+
+.main #box .sb3 h1 {
+    font-size: small;
+    width: 80%;
+}
+
+.main #box .sb3 #article3 {
+    font-size: small;
+    letter-spacing: 5px;
+    margin-top: 5px;
+}
+
+/* Four */
+.main #box .box4 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 60%;
+}
+
+.main #box .box4 img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.main #box .sb4 {
+    width: 70%;
+}
+
+.main #box .sb4 #min4 {
+    font-size: x-small;
+    letter-spacing: 5px;
+    margin-bottom: 6px;
+}
+
+.main #box .sb4 h1 {
+    font-size: small;
+    width: 80%;
+}
+
+.main #box .sb4 #article4 {
+    font-size: small;
+    letter-spacing: 5px;
+    margin-top: 5px;
+}
+/* Featured News Ends */
+
+/* Jupiter Ocean Start */
+.jupitar img{
+    width: 100vw;
+    position: relative;
+    top: 10rem;
+    filter: brightness(50%);
+}
+.jupitar .J{
+    position: relative;
+    width: 50%;
+    color: white;
+    bottom: 23rem;
+    padding-left: 40px;
+}
+.jupitar .J h1{
+font-size: 4.5rem;
+line-height: 4.8rem;
+}
+.jupitar .J p{
+    font-size: large;
+    line-height: 27px;
+    margin-top: 3.8rem;
+}
+.jupitar .J #mission{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.jupitar .J i{
+    transform: rotate(40deg);
+    color: tomato;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+.jupitar .J i:hover{
+    cursor: pointer;
+    color: firebrick;
+}
+/* Jupiter Ocean End */
+
+/* Solar System Exploration Start */
+#main{
+    width: 100vw;
+    padding-inline: 40px;
+}
+#main .solar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 12rem;
+    position: relative;
+    width: 98%;
+}
+#main .solar h1{
+    font-size: 2.5rem;
+}
+#main .solar p{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+#main .solar i{
+    color: #ff0000;
+    transform: rotate(40deg);
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 9px;
+}
+#main .solar i:hover{
+    color: firebrick;
+}
+.picture{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/* Picture 1 */
+.picture .pic1{
+    position: relative;
+    bottom: 8rem;
+    width: 37%;
+}
+.picture .pic1 img{
+    width: 100%;
+    height: 26rem;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+.picture #text1{
+    position: absolute;
+}
+.picture .pic1 h1{
+    position: absolute;
+    bottom: 3rem;
+    left: 21px;
+    color: white;
+    width: 10rem;
+}
+.picture .pic1 i{
+    color: tomato;
+    margin-left: 4px;
+}
+.picture .pic1 i:hover{
+color: firebrick;
+}
+
+/* Picture 2 */
+.picture .pic2{
+    position: relative;
+    bottom: 8rem;
+    width: 37%;
+    margin-left: 20px;
+}
+.picture .pic2 img{
+    width: 100%;
+    height: 26rem;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+.picture #text2{
+    position: absolute;
+}
+.picture .pic2 h1{
+    position: absolute;
+    bottom: 3rem;
+    left: 21px;
+    color: white;
+    width: 10rem;
+}
+.picture .pic2 i{
+    color: tomato;
+    margin-left: 4px;
+}
+.picture .pic2 i:hover{
+color: firebrick;
+}
+
+/* Picture 3 */
+.picture .pic3{
+    position: relative;
+    bottom: 8rem;
+    width: 37%;
+    margin-left: 20px;
+}
+.picture .pic3 img{
+    width: 100%;
+    height: 26rem;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+.picture #text3{
+    position: absolute;
+}
+.picture .pic3 h1{
+    position: absolute;
+    bottom: 3rem;
+    left: 21px;
+    color: white;
+    width: 10rem;
+}
+.picture .pic3 i{
+    color: tomato;
+    margin-left: 4px;
+}
+.picture .pic3 i:hover{
+color: firebrick;
+}
+
+/* Picture 4 */
+.picture .pic4{
+    position: relative;
+    bottom: 8rem;
+    width: 37%;
+    margin-left: 20px;
+}
+.picture .pic4 img{
+    width: 100%;
+    height: 26rem;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+.picture #text4{
+    position: absolute;
+
+}
+.picture .pic4 h1{
+    position: absolute;
+    bottom: 0.5rem;
+    left: 21px;
+    color: white;
+    width: 10rem;
+    line-height: 35px;
+}
+.picture .pic4 #text4 i{
+    color: tomato;
+    margin-left: 12rem;
+}
+.picture .pic4 #text4 i:hover{
+color: firebrick;
+}
+/* Solar System Exploration End */
+
+/* Earth Info Center Start */
+.earth{
+    width: 100vw;
+    position: relative;
+}
+.earth img{
+    width: 100vw;
+    margin-top: -4rem;
+    filter: brightness(59%);
+}
+.earth .info{
+    position: absolute;
+    width: 40%;
+    bottom: 7rem;
+    color: #fff;
+    padding-left: 3rem;
+}
+.earth .info h1{
+    font-size: 5rem;
+    line-height: 80px;
+}
+.earth .info p{
+    font-size: large;
+    line-height: 1.7rem;
+    margin-top: 4rem;
+}
+.earth .info h3{
+    font-size: x-large;
+    margin-top: 2rem;
+}
+.earth .info i{
+    color: tomato;
+    transform: rotate(40deg);
+    position: absolute;
+    margin-left: 14px;
+    margin-top: 5px;
+}
+.earth .info i:hover{
+    color: firebrick;
+}
+/* Earth Info Center End */
+
+/* Image of the Day Start */
+.day{
+    display: flex;
+    width: 100vw;
+    padding: 30px;
+    margin-top: 35px;
+    gap: 50px;
+}
+.day #left{
+    width: 35%;
+    padding: 20px;
+    margin-top: -28px;
+    margin-left: -15px;
+}
+.day #left #today{
+    font-size: x-small;
+    letter-spacing: 4px;
+}
+.day #left h1{
+    font-size: 2.5rem;
+}
+.day #left h3{
+    font-size: x-large;
+    margin-top: 4rem;
+    line-height: 25px;
+}
+.day #left p{
+margin-top: 15px;
+line-height: 25px;
+letter-spacing: 1px;
+}
+.day #left button{
+    font-weight: bold;
+    font-size: large;
+    background: none;
+    margin-top: 15px;
+}
+.day #left button:hover{
+    cursor: pointer;
+}
+.day #left i{
+    color: tomato;
+    font-size: x-large;
+    margin-top: 1px;
+    margin-left: 7px;
+    position: absolute;
+}
+.day #left i:hover{
+    color: firebrick;
+}
+.day #right{
+    width: 64%;
+    position: relative;
+}
+.day #right img{
+    width: 96%;
+    height: 96%;
+}
+.day #right button{
+    font-weight: bold;
+    font-size: large;
+    right: 4rem;
+    bottom: -10px;
+    position: absolute;
+}
+.day #right button:hover{
+    cursor: pointer;
+}
+.day #right button i{
+    color: tomato;
+    font-size: x-large;
+    font-weight: normal;
+    margin-top: 1px;
+    margin-left: 7px;
+    position: absolute;
+}
+.day #right i:hover{
+    color: firebrick;
+}
+.day #right .download i{
+    color: white;
+    position: absolute;
+    font-size: larger;
+    bottom: 28.8rem;
+    right: -15px;
+    background-color: mediumblue;
+    border-radius: 50%;
+    padding: 7px;
+}
+/* Image of the Day End */
+
+/* More NASA Images Start */
+#NASA-IMG{
+    font-size: 2.5rem;
+    position: absolute;
+    padding-top: 8.8rem;
+    padding-left: 2rem;
+}
+.pics{
+    width: 100vw;
+    padding: 30px;
+    display: flex;
+    margin-top: 14rem;
+}
+/* Section 1 */
+.pics .birds{
+    width: 30%;
+    height: fit-content;
+    position: relative;
+}
+.pics .birds .fly #one{
+    width: 15.5rem;
+    height: 11.5rem;
+}
+.pics .birds .fly #two{
+    width: 8.4rem;
+    position: absolute;
+    right: -22px;
+}
+.pics .birds .fly #three{
+    width: 8.4rem;
+    position: absolute;
+    bottom: 3.89rem;
+    right: -22px;
+}
+.pics .birds .heading{
+    width: 80%;
+    height: fit-content;
+}
+.pics .birds .heading h1{
+    font-size: medium;
+    margin-top: 8px;
+}
+.pics .birds .heading p{
+    font-size: small;
+    color: gray;
+    margin-top: 10px;
+    letter-spacing: 3px;
+}
+
+/* Section 2 */
+.pics .reptiles{
+    width: 30%;
+    height: fit-content;
+    position: relative;
+    left: 2.5rem;
+}
+.pics .reptiles .crawl #one1{
+    width: 15.5rem;
+    height: 11.5rem;
+}
+.pics .reptiles .crawl #two1{
+    width: 8.4rem;
+    height: 90px;
+    position: absolute;
+    right: -22px;
+}
+.pics .reptiles .crawl #three1{
+    width: 8.4rem;
+    height: 90px;
+    position: absolute;
+    bottom: 3.89rem;
+    right: -22px;
+}
+.pics .reptiles .heading{
+    width: 80%;
+    height: fit-content;
+}
+.pics .reptiles .heading h1{
+    font-size: medium;
+    margin-top: 8px;
+}
+.pics .reptiles .heading p{
+    font-size: small;
+    color: gray;
+    margin-top: 10px;
+    letter-spacing: 3px;
+}
+
+/* Section 3 */
+.pics .mammals{
+    width: 30%;
+    height: fit-content;
+    position: relative;
+    left: 5rem;
+}
+.pics .mammals .run #one2{
+    width: 15.5rem;
+    height: 11.5rem;
+}
+.pics .mammals .run #two2{
+    width: 8.4rem;
+    position: absolute;
+    right: -22px;
+}
+.pics .mammals .run #three2{
+    width: 8.4rem;
+    position: absolute;
+    bottom: 3.89rem;
+    right: -22px;
+}
+.pics .mammals .heading{
+    width: 80%;
+    height: fit-content;
+}
+.pics .mammals .heading h1{
+    font-size: medium;
+    margin-top: 8px;
+}
+.pics .mammals .heading p{
+    font-size: small;
+    color: gray;
+    margin-top: 10px;
+    letter-spacing: 3px;
+}
+/* More NASA Images End */
+
+/* Footer */
+.footer{
+    position: relative;
+    width: 100vw;
+    padding: 30px;
+    /* display: flex; */
+    background-color: black;
+    color: #fff;
+    padding-left: 35px;
+}
+.footer img{
+    width: 70px;
+}
+.cols{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.col1{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: start; */
+    width: 30%;
+
+}
+.col1 h1{
+    font-size: 20px;
+}
+.col1 p{
+    font-size: small;
+    line-height: 23px;
+    margin-top: 15px;
+    width: 19.5rem;
+    color: darkgray;
+}
+.col1 .about{
+    font-size: 15px;
+    color: #fff;
+}
+.col1 button{
+    font-weight: bold;
+    font-size: medium;
+    margin-top: 10px;
+    color: white;
+    background:none ;
+    font-size: large;
+}
+.col1 button i{
+    color: tomato;
+    font-size: larger;
+    margin-left: 3px;
+}
+.col1 button i:hover{
+    color: firebrick;
+}
+.col2{
+    width: 150px;
+    margin-top: -20px;
+}
+.col2 ul{
+    list-style: none;
+    font-size: medium;
+    line-height: 35px;
+}
+.col2 ul:hover{
+    cursor: pointer;
+    text-decoration: 1px solid white;
+}
+.col2 ul #live{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -60px;
+}
+.col2 ul #live:hover span{
+    background-color: firebrick;
+}
+.col2 ul #live a{
+    font-size: small;
+    color: white;
+    margin: 0;
+    gap: 4px;
+}
+.col2 ul #live span{
+    padding: 1px 4px;
+    font-size: 8px;
+    letter-spacing: 3px;
+    border: 1px solid rgba(255 0 0 / .6);
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-left: 4px;
+}
+.col3{
+    width: 150px;
+    margin-top: -20px;
+}
+.col3 ul{
+    list-style: none;
+    font-size: medium;
+    line-height: 35px;
+}
+.col4{
+    width: 150px;
+    margin-top: -20px;
+}
+.col4 ul{
+    list-style: none;
+    font-size: medium;
+    line-height: 35px;
+}
+.cols .col5{
+line-height: 35px;
+margin-top: 13px;
+}
+.col5 h3{
+    color: gray;
+}
+.col5 .icons{
+    color: white;
+    font-size: 25px;
+}
+.col5 .icons #icon1:hover{
+    color: lightgray;
+}
+.col5 .icons #icon2:hover{
+    color: lightgray;
+}
+.col5 .icons #icon3:hover{
+    color: lightgray;
+}
+.col5 .icons #icon4:hover{
+    color: lightgray;
+}
+.line{
+    background-color: darkgray;
+    width: 100%;
+    height: 0.8px;
+    margin-top: 40px;
+}
+.footer .last{
+    margin-top: 3rem;
+}
+.footer .last ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    line-height: 16px;
+    color: darkgray;
+}
+.footer .copyright{
+    margin-top: 2rem;
+    display: flex;
+    gap: 40px;
+}
+.footer .copyright p{
+    color: darkgray;
+}
+.footer .copyright span{
+    font-weight: bold;
+}
