@@ -1,0 +1,40 @@
+@keyframes spinFan {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+.main{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main img{
+    height: 350px;
+}
+.main .buttons{
+    margin-top: 4rem;
+}
+.main .buttons button{
+    background-color: darkslategrey;
+    color: white;
+    font-size: large;
+    margin: 8px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.main .buttons button:hover{
+    cursor: pointer;
+}
+.main .buttons .ON:active{
+    background-color: orange;
+}
+.main .buttons .OFF:active{
+    background-color: red;
+}
+.main .buttons button:active{
+    background-color: teal;
+}
+
+
+

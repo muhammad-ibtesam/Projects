@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <style>
+
+    </style>
+
+    <script>
+
+        var userInp = prompt('Enter City Name')
+        var arr = ['karachi', 'lahore', 'islamabad', 'murree', 'quetta']
+        var match = false
+        // This is FLAG Variable; ye ek signal ki tarah hai, js ki ek value ham ne loop k ander jaa k fix krdi city
+        // found wale alert me, agr match= false hoga to wo city not found ka alert show krdega. (assumption values hoti hain ye hamari)
+
+        for (i = 0; i < arr.length; i++) {
+            if (userInp == arr[i]) {
+                match = true
+                Swal.fire({
+                    title: "Congrats!",
+                    text: "Your city is in our list",
+                    icon: "success"
+                });
+                break
+                // to break loop, kisi bhi index pe condition true milne pe loop chalna band hojae
+            }
+        }
+
+        if (match == false) {
+            Swal.fire({
+                title: "Sorry",
+                text: "Your city not found",
+                icon: "error"
+            })
+        }
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+// 1st for loop: OUTER LOOP [values are 1, 11, 21, 31, .....]
+// 2nd for loop: INNER LOOP [values are 2 se 10; jese hi 11 tk pohonchta, cond false hoti or wapis inner loop se outer loop ki taraf chale jata]
+
+        for (var i = 1; i <= 100; i = i + 10) {
+
+            for (j = i; j < i + 10; j++) {
+                document.write(j + " ")
+            }
+            document.write('<br>')
+            // document.write(i + '<br>')
+        }
+
+    </script>
+</body>
+
+</html>

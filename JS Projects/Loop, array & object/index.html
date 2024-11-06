@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        .main {
+            display: flex;
+            justify-content: space-around;
+            border: 2px groove black;
+            padding: 30px;
+        }
+
+        .main #table1 {
+            box-shadow: 0px 0px 10px gray;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .main #table2 {
+            box-shadow: 0px 0px 10px gray;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+        .main span{
+            color: blue;
+            font-weight: 900;
+        }
+    </style>
+
+    <h2>In this project, the data is fetch by <br> two different arrays.</h2>
+    <div class="main">
+        <div id="table1">
+            <h2>LIST OF FLATS FOR <span> SALE </span></h2>
+        </div>
+
+        <div id="table2">
+            <H2>LIST OF FLATS FOR <span> RENT </span></H2>
+        </div>
+    </div>
+
+    <script>
+
+        let t1 = document.querySelector('#table1');
+        let t2 = document.querySelector('#table2');
+
+        let sale = [
+            { naam: "Flat 1", price: "10M", location: "PECHS" },
+            { naam: "Flat 2", price: "20M", location: "DHA" },
+            { naam: "Flat 3", price: "8M", location: "M.A Society" },
+        ];
+        for (count = 0; count < sale.length; count++) {
+            t1.innerHTML += `<table border="2">
+                <tr><th>${sale[count].naam}</th></tr>
+                <tr><td>PRICE: ${sale[count].price}</td></tr>
+                <tr><td>LOCATION: ${sale[count].location}</td></tr>
+                </table>`
+        }
+
+        let rent = [
+            { naam: "Flat 1", price1: "45k", location1: "PECHS" },
+            { naam: "Flat 2", price1: "50k", location1: "DHA" },
+            { naam: "Flat 3", price1: "35k", location1: "MA Society" },
+        ];
+        for (i = 0; i < rent.length; i++) {
+            t2.innerHTML += `<table border="2">
+                <tr><th>${rent[i].naam}</th></tr>
+                <tr><td>PRICE: ${rent[i].price1}</td></tr>
+                <tr><td>LOCATION: ${rent[i].location1}</td></tr>
+                </table>`
+        }
+
+
+
+        // var div = document.getElementsByTagName('div')[0]
+
+        // var cars = [
+        //     { name: "Audi", price: "4M" },
+        //     { name: "Toyota", price: "2.5M" },
+        //     { name: "Suzuki", price: "2M" },
+        // ];
+
+        // for (count = 0; count <= 11; count++) {
+        //     div.innerHTML += `<div>
+        // <p>${cars[count].name}</p>
+        // <p>${cars[count].price}</p>
+        // </div>`;
+        // }
+
+    </script>
+
+</body>
+
+</html>

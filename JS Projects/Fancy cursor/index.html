@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black">
+
+    <div class="bg-teal-600 w-20 h-20 rounded-full flex flex-col justify-center items-center">
+        <div class="text-white">X</div>
+        <div class="text-white">Y</div>
+    </div>
+
+    <script>
+        document.addEventListener("mousemove", handleMouse)
+        var divTag = document.getElementsByTagName('div');
+
+        function handleMouse(event) {
+            console.log(event);
+            divTag[1].innerHTML = `X: ${event.clientX}`
+            divTag[2].innerHTML = `Y: ${event.clientY}`
+            divTag[0].style.position = 'absolute'
+            divTag[0].style.top = `${event.clientY - 45}px`
+            divTag[0].style.left = `${event.clientX - 45}px`
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: white;">
+    
+<h1>Heading Size</h1>
+
+<script>
+    document.addEventListener('mousemove' , handlemove)
+
+    function handlemove(event) {
+        let h1 = document.getElementsByTagName('h1')[0]
+        let body = document.getElementsByTagName('body')[0]
+
+        h1.style.fontSize = (event.clientX / 6) + 'px' 
+        body.style.backgroundColor = `rgb(${event.clientX}, ${event.clientX / 5}, ${event.clientY})`
+    }
+</script>
+
+</body>
+</html>

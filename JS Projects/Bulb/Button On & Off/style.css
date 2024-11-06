@@ -1,0 +1,25 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main img{
+    height: 300px;
+}
+.main .buttons{
+padding: 8px;
+height: 200px;
+}
+.main .buttons button{
+    padding: 8px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 10px gray;
+    background-color: lightsalmon;
+}
+.main .buttons button:hover{
+    cursor: pointer;
+}
+

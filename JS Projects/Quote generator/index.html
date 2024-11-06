@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-image: url(https://i.pinimg.com/736x/a1/15/7c/a1157c8469f593de935222d71da98cb0.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            /* background-color: rgb(170, 179, 189); */
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 4rem;
+            text-shadow: 0px 0px 1px white;
+            width: fit-content;
+            outline: none;
+            color: black
+        }
+
+        #display {
+            height: 30vh;
+            width: 60vw;
+            background: linear-gradient(white, gray);
+            font-size: large;
+            position: absolute;
+            top: 12.5rem;
+            left: 14rem;
+            text-align: center;
+            padding: 20px;
+            font-size: xx-large;
+            border-radius: 20px;
+            box-shadow: 3px 3px 10px black;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        .container button {
+            width: 30%;
+            height: 50px;
+            font-size: large;
+            font-weight: bold;
+            position: absolute;
+            border-radius: 20px;
+            outline: none;
+            border: none;
+            background-color: rgb(2, 138, 138);
+            color: white;
+            cursor: pointer;
+        }
+
+        .container button:hover {
+            background-color: rgb(6, 148, 148);
+        }
+        
+    </style>
+
+    <center>
+        <h1><u>Motivational Quotes</u></h1>
+    </center>
+
+    <div id="display"></div>
+    <div class="container">
+        <button onclick="generate()">Generate Quotes</button>
+    </div>
+
+
+    <script>
+        var list = [
+            "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+            "Don't wait for opportunity. Create it.",
+            "You are capable of amazing things.",
+            "Don't watch the clock; do what it does. Keep going.",
+            "Difficult roads often lead to beautiful destinations.",
+            "Success is not how high you have climbed, but how you make a positive difference to the world.",
+            "Believe in yourself and all that you are.",
+            "We cannot solve problems with the kind of thinking we employed when we came up with them",
+            "Learn as if you will live forever, live like you will die tomorrow",
+            "Stay away from those people who try to disparage your ambitions. Small minds will always do that, but great minds will give you a feeling that you can become great too.",
+            "When you give joy to other people, you get more joy in return. You should give a good thought to the happiness that you can give out.",
+            "When you change your thoughts, remember to also change your world.",
+            "It is only when we take chances that our lives improve. The initial and the most difficult risk we need to take is to become honest.",
+            "Nature has given us all the pieces required to achieve exceptional wellness and health, but has left it to us to put these pieces together.",
+            "Success is not final; failure is not fatal: It is the courage to continue that counts.",
+            "There are three ways to ultimate success: The first way is to be kind. The second way is to be kind. The third way is to be kind.",
+            "Success is peace of mind, which is a direct result of self-satisfaction in knowing you made the effort to become the best of which you are capable.",
+            "Success is getting what you want; happiness is wanting what you get.",
+            "The pessimist sees difficulty in every opportunity. The optimist sees opportunity in every difficulty."
+        ]
+
+        function generate() {
+            var randomQuote = Math.floor(Math.random() * list.length);
+            var div = document.getElementById('display');
+            div.innerHTML = list[randomQuote];
+            console.log('list')
+        }
+
+    </script>
+
+
+</body>
+
+</html>

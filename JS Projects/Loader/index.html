@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="flex justify-center items-center h-[100vh]">
+        <img src="https://etenonfitness.com/wp-content/themes/etenon/assets/images/load.gif" alt="">
+
+        <div name="mainpage" class="hidden flex-col items-center gap-10 ">
+            <h1 class=" text-5xl font-bold underline text-blue-900">Welcome to my dashboard</h1>
+            <iframe class="w-[90vw] h-[80vh] " src="https://nasa-web.netlify.app/" frameborder="0"></iframe>
+        </div>
+
+    </div>
+
+    <script>
+
+        // Method 1 (Efficient Method)
+
+        window.onload = function () {
+            // Hide the loader after the page load
+            document.getElementsByTagName('img')[0].style.display = 'none';
+
+            // Show the main page content
+            document.getElementsByName('mainpage')[0].style.display = 'flex';
+        };
+        
+        
+        // Method 2 (Lengthy Procedure)
+        // function handleloader() {
+        //     document.getElementsByTagName('img')[0].style.display = 'none'
+        //     document.getElementsByName('mainpage')[0].style.display = 'flex'
+        // }
+        // setTimeout(() => {
+        //     document.getElementsByTagName('iframe')[0].style.display = 'flex';
+        // }, 3000);
+
+        // window.onload = function () {
+        //     handleloader();  // Call the loader handling function when the page is fully loaded
+        // };  
+
+
+        // Loader will disappear after 3 sec
+        // setTimeout(handleloader, 3000)
+
+        // function handleloader() {
+        //     document.getElementsByTagName('img')[0].style.display = 'none'
+        //     document.getElementsByName('mainpage')[0].style.display = 'flex'
+        // }
+
+    </script>
+</body>
+
+</html>

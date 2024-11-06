@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+     <!-- Img cursor Html -->
+      <h1 class="font-bold text-4xl text-center text-gray-800 mt-10">Move Cursor to Re-position the Penguin</h1>
+    <div id="container" class="">
+        <img class="w-[100%] h-full"
+            src="https://png.pngtree.com/png-clipart/20230510/original/pngtree-arctic-penguins-ai-png-image_9154941.png"
+            alt="">
+    </div>
+
+    <script>
+         // Img cursor JavaCript
+        document.addEventListener('mousemove', handlemouse)
+        var divTag = document.getElementById('container')
+
+        function handlemouse(event) {
+        divTag.style.position = 'absolute'
+        divTag.style.top = `${event.clientY - 45}px`
+        divTag.style.left = `${event.clientX - 45}px`
+        }
+
+    </script>
+</body>
+</html>
