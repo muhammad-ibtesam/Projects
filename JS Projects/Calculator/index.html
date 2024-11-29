@@ -4,37 +4,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <div id="main">
+<body class="bg-gray-800">
 
-        <p id="heading">0</p>
+    <!-- CALCULATOR -->
 
-        <div id="below">
-            <button class="normal" onclick="handleclick(1)">1</button>
-            <button class="normal" onclick="handleclick(2)">2</button>
-            <button class="normal" onclick="handleclick(3)">3</button>
-            <button class="normal" onclick="handleclick(4)">4</button>
-            <button class="normal" onclick="handleclick(5)">5</button>
-            <button class="normal" onclick="handleclick(6)">6</button>
-            <button class="normal" onclick="handleclick(7)">7</button>
-            <button class="normal" onclick="handleclick(8)">8</button>
-            <button class="normal" onclick="handleclick(9)">9</button>
-            <button class="normal" onclick="handleclick(0)">0</button>
-            <button class="special" onclick="handleclick('+')">+</button>
-            <button class="special" onclick="handleclick('-')">-</button>
-            <button class="special" onclick="handleclick('/')">/</button>
-            <button class="special" onclick="handleclick('*')">*</button>
-            <button class="result" onclick="sum()">=</button>
-            <button class="clear" onclick="clearentry()">CE</button>
-        </div>
-
+    <div class="flex justify-center items-center mt-20">
+        <h1 class="bg-orange-700 font-bold text-lg md:text-2xl text-white rounded-md text-center w-fit p-2">
+            CALCULATOR...</h1>
     </div>
 
-    <script src="app.js"></script>
-</body>
+    <div class="flex justify-center items-center ">
 
-</html>
+        <div class="flex-col justify-center items-center hover:shadow-gray-400 hover:shadow-lg bg-white bg-opacity-50 w-fit rounded-md mt-4 p-5">
+
+            <div class="justify-center items-center flex">
+                <input class="border-slate-800 px-2 border-2 border-solid h-10 w-48 md:w-56" readonly type="text"
+                    id="inp">
+            </div>
+            <div class="justify-center items-center flex gap-4 m-2">
+                <button class="bg-red-600 p-2 md:text-lg rounded-sm text-white active:bg-red-800" onclick="clr()">Clear
+                    all</button>
+                <button class="bg-teal-500 p-2 rounded-sm md:text-lg text-white active:bg-teal-700"
+                    onclick="del()">Delete</button>
+            </div>
+
+            <div class="flex justify-center items-center gap-1 mb-2 w">
+                <button class="border border-black p-1 bg-white px-4 md:text-lg rounded-sm active:bg-slate-200"
+                    onclick="handle(9)">9</button>
+                <button class="border border-black p-1 bg-white px-4 md:text-lg rounded-sm active:bg-slate-200"
+                    onclick="handle(8)">8</button>
+                <button class="border border-black p-1 bg-white px-4 md:text-lg rounded-sm active:bg-slate-200"
+                    onclick="handle(7)">7</button>
+                <button
+                    class="border border-black p-1 px-4 md:text-lg rounded-sm bg-slate-700 text-white active:bg-slate-800"
+                    onclick="handle('+')">+</button>
+            </div>
+
+            <div class="flex justify-center items-center gap-1 mb-2">
+                <button class="border border-black p-1 bg-white px-4 md:text-lg rounded-sm active:bg-slate-200"
+                    onclick="handle(4)">4</button>
+                <button class="border border-black p-1 bg-white px-4 md:text-lg rounded-sm active:bg-slate-200"
+                    onclick="handle(5)">5</button>
+                <button class="border border-black p-1 bg-white px-4 md:text-lg rounded-sm active:bg-slate-200"
+                    onclick="handle(6)">6</button>
+                <button
+                    class="border border-black p-1 px-4 md:text-lg rounded-sm bg-slate-700 text-white active:bg-slate-800"
+                    onclick="handle('-')">-</button>
+            </div>
+
+            <div class="flex justify-center items-center gap-1 mb-2">
+                <button class="border border-black p-1 bg-white px-4 md:text-lg rounded-sm active:bg-slate-200"
+                    onclick="handle(3)">3</button>
+                <button class="border border-black p-1 bg-white px-4 md:text-lg rounded-sm active:bg-slate-200"
+                    onclick="handle(2)">2</button>
+                <button class="border border-black p-1 bg-white px-4 md:text-lg rounded-sm active:bg-slate-200"
+                    onclick="handle(1)">1</button>
+                <button
+                    class="border border-black p-1 px-4 md:text-lg rounded-sm bg-slate-700 text-white active:bg-slate-800"
+                    onclick="handle('/')">/</button>
+            </div>
+
+            <div class="flex justify-center items-center gap-1 mb-2">
+                <button class="border border-black p-1 bg-white px-4 md:text-lg rounded-sm active:bg-slate-200"
+                    onclick="handle(0)">0</button>
+                <button class="border border-black p-1 bg-white px-4 md:text-lg rounded-sm active:bg-slate-200"
+                    onclick="handle('*')">x</button>
+                <button
+                    class="border border-black p-1 bg-white px-4 md:text-lg rounded-sm bg-yellow-400 active:bg-yellow-500"
+                    onclick="eq('=')">=</button>
+                <button
+                    class="border border-black p-1 px-4 md:text-lg rounded-sm bg-slate-700 text-white active:bg-slate-800"
+                    onclick="handle('%')">%</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        function handle(e) {
+            document.getElementById('inp').value += e
+
+            // console.log(e)
+        }
+
+        function eq() {
+            var a = document.getElementById('inp')
+            a.value = eval(a.value)
+        }
+
+        function clr() {
+            document.getElementById('inp').value = ''
+        }
+
+        function del() {
+            var arr = document.getElementById('inp');
+            arr.value = arr.value.slice(0, -1);
+        }
+
+    </script>
+
+</body >
+</html >
